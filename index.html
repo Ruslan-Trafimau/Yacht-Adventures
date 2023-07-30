@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-----СЛАЙДЕР------------------->
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!---СЛАЙДЕР-------------------------->
     <title>Web Studio (Version 4.0)</title>
     <link
       rel="stylesheet"
@@ -20,13 +28,16 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media-desktop.css" />
+    <link rel="stylesheet" href="./css/media-375.css" />
+    <link rel="stylesheet" href="./css/media-768.css" />
+    <link rel="stylesheet" href="./css/media-1280.css" />
   </head>
   <body>
     <section class="review-block">
       <div class="container">
         <div class="review-block-title">
           <h3 class="review-block-h_three">
-            <span class="studio">Yacht Adventures</span>
+            <span class="review-block-YA-font">Yacht Adventures</span>
             take pride in providing the best possible service and experience to
             our customers
           </h3>
@@ -59,8 +70,11 @@
           <li class="list review-block-images-bkg">
             <img
               class="review-block-img"
-              srcset="./images/img_s4-1.png 1x, ./images/img_s4-1@2x.png 2x"
-              src="./images/img_s4-1.png"
+              srcset="
+                ./images/Victoria_Romashenko.jpg    1x,
+                ./images/Victoria_Romashenko@2x.jpg 2x
+              "
+              src="./images/Victoria_Romashenko.jpg"
               alt="John Wax photo"
               width="56"
               height="56"
@@ -94,7 +108,91 @@
             </div>
           </li>
         </ul>
+
+        <!-----СЛАЙДЕР----->
+        <div class="swiper-container">
+          <!-- Оболочка для слайдера -->
+          <div class="swiper-wrapper">
+            <!-- Оболочка для отдельного слайда -->
+            <div class="swiper-slide">
+              <div class="list review-block-images-bkg">
+                <img
+                  class="review-block-img"
+                  srcset="./images/John_Wax.jpg 1x, ./images/John_Wax@2x.jpg 2x"
+                  src="./images/John_Wax.jpg"
+                  alt="John Wax photo"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h4 class="review-block-h_four">John Wax</h4>
+                  <p class="review-block-p">
+                    I rented the Lagoon 620 with my family for a week-long
+                    vacation and it was the best decision ever. The yacht was
+                    spacious, comfortable, and luxurious, and the crew took care
+                    of everything.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="list review-block-images-bkg">
+                <img
+                  class="review-block-img"
+                  srcset="
+                    ./images/Victoria_Romashenko.jpg    1x,
+                    ./images/Victoria_Romashenko@2x.jpg 2x
+                  "
+                  src="./images/Victoria_Romashenko.jpg"
+                  alt="John Wax photo"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h4 class="review-block-h_four">Victoria Romashenko</h4>
+                  <p class="review-block-p">
+                    The Sunseeker Manhattan 66 was the perfect choice for our
+                    romantic getaway. The yacht was beautifully designed, with
+                    all the amenities we needed, and the crew was attentive and
+                    friendly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="list review-block-images-bkg">
+                <img
+                  class="review-block-img"
+                  srcset="./images/img_s4-3.jpg 1x, ./images/img_s4-3@2x.jpg 2x"
+                  src="./images/img_s4-3.jpg"
+                  alt="Ihor Trachuk photo"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h4 class="review-block-h_four">Ihor Trachuk</h4>
+                  <p class="review-block-p">
+                    The Azimut 80 was the most luxurious yacht I've ever been
+                    on. The cabins were spacious and elegant, and the outdoor
+                    areas were perfect for relaxing and entertaining. Worth
+                    every penny!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-----СЛАЙДЕР----->
+        <a class="review-block-link" href="#top">
+          <img src="./images/arrow_up.svg" />
+        </a>
+        <div>ery</div>
       </div>
     </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
